@@ -35,7 +35,7 @@ func getTime(w http.ResponseWriter, r *http.Request) {
 }
 
 func main() {
-	http.HandleFunc("/time", getTime)
+	http.HandleFunc("/", getTime)
 	fmt.Println("Server is running on port 9090")
 	// Start the server
 	http.ListenAndServe(":9090", nil)
